@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <center>
+
+      <img style="block-size: 80px; inline-size: ;"
+        src="../../assets/icon/backy.png">
+
+    </center>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <center>
+    <div>
+      <div>
+        <p>
+          ประเภทอาหาร :
+        </p>
+        <ion-button *ngFor="let show of data"
+          (click)="go(show.name)">
+          {{show.name}}
+        </ion-button>
+      </div>
+
+      <div>
+        <h1>เมนูแนะนำ</h1>
+      </div>
+
+
+      <div style="padding-top: 30px;">
+        <div>
+          <a><img
+              src="https://nlovecooking.com/wp-content/uploads/2017/12/food66-300x157.jpg"
+              /></a>
+          <h5><b>ข้าวผัด</b></h5>
+        </div>
+
+
+        <a><img
+            src="https://nlovecooking.com/wp-content/uploads/2017/12/food66-300x157.jpg"
+            /></a>
+        <h5><b>ข้าวผัด</b></h5>
+
+        <a><img
+            src="https://nlovecooking.com/wp-content/uploads/2017/12/food66-300x157.jpg"
+            /></a>
+        <h5><b>ข้าวผัด</b></h5>
+
+        <a><img
+            src="https://nlovecooking.com/wp-content/uploads/2017/12/food66-300x157.jpg"
+            /></a>
+        <h5><b>ข้าวผัด</b></h5>
+
+        <a><img
+            src="https://nlovecooking.com/wp-content/uploads/2017/12/food66-300x157.jpg"
+            /></a>
+        <h5><b>ข้าวผัด</b></h5>
+
+        <a><img
+            src="https://nlovecooking.com/wp-content/uploads/2017/12/food66-300x157.jpg"
+            /></a>
+        <h5><b>ข้าวผัด</b></h5>
+
+        <a><img
+            src="https://nlovecooking.com/wp-content/uploads/2017/12/food66-300x157.jpg"
+            /></a>
+        <h5><b>ข้าวผัด</b></h5>
+      </div>
+    </div>
+  </center>
+</ion-content>

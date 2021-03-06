@@ -8,8 +8,20 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'open',
     pathMatch: 'full'
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'open',
+    loadChildren: () => import('./open/open.module').then( m => m.OpenPageModule)
+  },
+  {
+    path: 'dessert/:items',
+    loadChildren: () => import('./dessert/dessert.module').then( m => m.DessertPageModule)
   },
 ];
 

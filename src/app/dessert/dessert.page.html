@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <center>
+      <ion-row>
+        <img style="block-size: 80px; inline-size: ;"
+          src="../../assets/icon/backy.png">
+      </ion-row>
+
+
+    </center>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-card *ngFor="let a of loop">
+      <img src={{a.image}} />
+      <center><p>{{a.name}}</p></center></ion-card>
+  </div>
+
+
+</ion-content>
